@@ -6,18 +6,21 @@
   --hover-focus-color: crimson;
 }
 .body {
+  width: 1200px;
+  margin: 0px;
   font-family: "Roboto";
   font-style: normal;
   font-size: 14px;
-  width: 1600px;
 }
 .header {
-  position: absolute;
+  width: 1600px;
   height: 80px;
   left: 0px;
   top: 0px;
-  width: 1600px;
-  background-color: var(--second-background-color);
+
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #c9e818;
 }
 .logo {
   position: absolute;
@@ -135,11 +138,12 @@
   color: var(--hover-focus-color);
 }
 /* main */
-.bg {
+.container-bg {
   position: absolute;
   width: 1600px;
   height: 600px;
-  left: 0px;
+  padding-top: 72px;
+  padding-bottom: 72px;
   top: 80px;
 
   background: var(--firste-background-color);
@@ -150,6 +154,7 @@
   height: 120px;
   left: 452px;
   top: 280px;
+  margin-bottom: 30px;
 
   font-weight: 900;
   font-size: 44px;
@@ -167,6 +172,7 @@
   height: 50px;
   left: 700px;
   top: 430px;
+  margin-bottom: 200px;
   cursor: pointer;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -179,11 +185,12 @@
 }
 
 /* Наши преимущества */
-
 .container-feature {
   display: flex;
   position: absolute;
-  width: 1170px;
+  width: 1200px;
+  padding-top: 72px;
+  padding-bottom: 72px;
 
   left: 215px;
   right: 215px;
@@ -194,60 +201,9 @@
 
   background-color: coral;
 }
-.container_text_1 {
-  width: 270px;
-  padding: 10px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-
-  color: #212121;
-}
-.text1 {
-  width: 270px;
-  font-weight: 400;
-
-  line-height: 24px;
-  letter-spacing: 0.03em;
-
-  color: #757575;
-}
-.container_text_2 {
-  width: 270px;
-  padding: 10px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-
-  color: #212121;
-}
-.text2 {
-  width: 270px;
-  font-weight: 400;
-  line-height: 24px;
-
-  letter-spacing: 0.03em;
-
-  color: #757575;
-}
-.container_text_3 {
-  width: 270px;
-  padding: 10px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-
-  color: #212121;
-}
-.text3 {
-  width: 270px;
-  font-weight: 400;
-  line-height: 24px;
-
-  letter-spacing: 0.03em;
-
-  color: #757575;
-}
+.container_text_1,
+.container_text_2,
+.container_text_3,
 .container_text_4 {
   width: 270px;
   padding: 10px;
@@ -257,27 +213,33 @@
 
   color: #212121;
 }
+.text1,
+.text2,
+.text3,
 .text4 {
   width: 270px;
   font-weight: 400;
-  line-height: 24px;
 
+  line-height: 24px;
   letter-spacing: 0.03em;
 
   color: #757575;
 }
-
+/* Чем мы занимаемся */
 .container-title {
   position: absolute;
   top: 969px;
-  width: 696px;
-  left: 452px;
+  width: 1200px;
+  left: 215px;
   text-align: center;
+  padding-bottom: 1%;
+  margin-top: 11%;
 
+  justify-content: space-around;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
-
+  background-color: #188ce8;
   letter-spacing: 0.03em;
 
   color: #212121;
@@ -285,25 +247,18 @@
 .container-flex {
   display: flex;
   position: absolute;
-  width: 1170px;
-  left: 215px;
-  right: 215px;
-  top: 1061px;
+
+  width: 1200px;
+  padding-top: 72px;
+  padding: bottom 72px;
   justify-content: space-evenly;
 
   flex-wrap: wrap;
 
   background-color: rgb(255, 0, 217);
 }
-
-.box1 {
-  width: 370px;
-  height: 294px;
-}
-.box2 {
-  width: 370px;
-  height: 294px;
-}
+.box1,
+.box2,
 .box3 {
   width: 370px;
   height: 294px;
@@ -311,21 +266,13 @@
 
 /* Наша команда */
 
-.section_bag {
-  position: absolute;
-  width: 1600px;
-  height: 648px;
-  left: 0px;
-  top: 1449px;
-
-  background-color: deeppink;
-}
 .our-team {
   position: absolute;
-  width: 264px;
-  height: 42px;
-  left: 668px;
+  width: 1200px;
+
+  left: 215px;
   top: 1543px;
+  padding-top: 72px;
 
   font-weight: 700;
   font-size: 36px;
@@ -334,245 +281,86 @@
   letter-spacing: 0.03em;
 
   color: #212121;
+  background-color: blueviolet;
 }
-.bag {
+.team-flex {
+  display: flex;
   position: absolute;
-  width: 1600px;
+  width: 1200px;
+
+  padding: 1%;
+
+  background-color: deeppink;
 }
-.bag1 {
-  position: absolute;
-  width: 270px;
-  height: 368px;
-  left: 215px;
-  top: 1635px;
-
-  background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-.photo1 {
-  position: absolute;
-  width: 270px;
-  height: 260px;
-  left: 215px;
-  top: 1635px;
-
-  border-radius: 0px;
-}
-.name1 {
-  position: absolute;
-  width: 151px;
-  height: 19px;
-  left: 275px;
-  top: 1925px;
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18.75px;
-
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: #212121;
-}
-.text_box1 {
-  position: absolute;
-  width: 130px;
-  height: 19px;
-  left: 285px;
-  top: 1954px;
-
-  font-size: 16px;
-  line-height: 18.75px;
-
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: #757575;
-}
-.bag2 {
-  position: absolute;
-  width: 270px;
-  height: 368px;
-  left: 515px;
-  top: 1635px;
-
-  background: #ffffff;
-  /* material shadow v1 */
-
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-.photo2 {
-  position: absolute;
-  width: 270px;
-  height: 260px;
-  left: 515px;
-  top: 1635px;
-
-  border-radius: 0px;
-}
-.name2 {
-  position: absolute;
-  width: 109px;
-  height: 19px;
-  left: 596px;
-  top: 1925px;
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  /* identical to box height */
-
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: #212121;
-}
-
-.text_box2 {
-  position: absolute;
-  width: 147px;
-  height: 19px;
-  left: 577px;
-  top: 1954px;
-
-  font-size: 16px;
-  line-height: 19px;
-  /* identical to box height */
-
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: #757575;
-}
-
-.bag3 {
-  position: absolute;
-  width: 270px;
-  height: 368px;
-  left: 815px;
-  top: 1635px;
-
-  background: #ffffff;
-  /* material shadow v1 */
-
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
-.photo3 {
-  position: absolute;
-  width: 270px;
-  height: 260px;
-  left: 815px;
-  top: 1635px;
-
-  border-radius: 0px;
-}
-.name3 {
-  position: absolute;
-  width: 137px;
-  height: 19px;
-  left: 882px;
-  top: 1925px;
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  /* identical to box height */
-
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: #212121;
-}
-.text_box3 {
-  position: absolute;
-  width: 76px;
-  height: 19px;
-  left: 912px;
-  top: 1954px;
-
-  font-size: 16px;
-  line-height: 19px;
-  /* identical to box height */
-
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: #757575;
-}
+.bag1,
+.bag2,
+.bag3,
 .bag4 {
-  position: absolute;
   width: 270px;
   height: 368px;
-  left: 1115px;
-  top: 1635px;
+  margin-right: 32px;
+  list-style: none;
 
+  padding: 0px;
   background: #ffffff;
-  /* material shadow v1 */
-
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.photo4 {
-  position: absolute;
+.item.photo1,
+.item.photo2,
+.item.photo3,
+.item.photo4 {
   width: 270px;
-  height: 260px;
-  left: 1115px;
-  top: 1635px;
 
   border-radius: 0px;
 }
+.name1,
+.name2,
+.name3,
 .name4 {
   position: absolute;
-  width: 134px;
-  height: 19px;
-  left: 1183px;
-  top: 1925px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 
   font-weight: 500;
+  width: 270px;
+  text-align: center;
   font-size: 16px;
   line-height: 19px;
-  /* identical to box height */
 
-  text-align: center;
   letter-spacing: 0.03em;
+  list-style: none;
 
   color: #212121;
 }
-.text_box4 {
+.text_bag1,
+.text_bag2,
+.text_bag3,
+.text_bag4 {
   position: absolute;
-  width: 87px;
-  height: 19px;
-  left: 1207px;
-  top: 1954px;
+  margin-top: 60px;
+  margin-bottom: 10px;
+  width: 270px;
+  text-align: center;
 
   font-size: 16px;
   line-height: 19px;
-  /* identical to box height */
 
-  text-align: center;
   letter-spacing: 0.03em;
+  list-style: none;
 
   color: #757575;
 }
 
-.footer_bag {
+.page-footer {
   position: absolute;
   width: 1600px;
   height: 252px;
-  left: 0px;
-  top: 2097px;
+  padding-top: 72px;
 
   background: #2f303a;
 }
-
 .logo2 {
   position: absolute;
   width: 145px;
@@ -608,7 +396,6 @@
 
   color: #ffffff;
 }
-
 .mail-to {
   position: absolute;
   width: 231px;
