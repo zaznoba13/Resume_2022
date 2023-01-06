@@ -4,9 +4,12 @@
   --main-color: #212121;
   --sec-color: #757575;
   --hover-focus-color: crimson;
+  --botton-inactive-color: #f5f4fa;
+  --botton-hover-color: #2196f3;
 }
 
 .body {
+  margin: 0px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -138,18 +141,63 @@
 
 /* main */
 /* Portfolio*/
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.visualy-hidden {
+  position: absolute;
+  clip: rect(0 o o 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
 
-.filter {
-  font-size: 16px;
-  line-height: 26px;
-  text-align: center;
+.filter-list {
   display: flex;
   justify-content: center;
-  height: 80px;
-  letter-spacing: 0.03em;
-  color: var(--main-color);
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 50px;
+
+  flex-wrap: wrap;
+
+  font-size: 16px;
+  line-height: 26px;
   background-color: var(--main-background-color);
+  list-style: none;
 }
+
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+.filter-item {
+  display: list-item;
+  text-align: center;
+}
+.button {
+  border: none;
+  padding: 6px 22px;
+  cursor: pointer;
+
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  color: var(--main-color);
+  background: #f5f4fa;
+}
+.botton:hover {
+  color: var(botton-hover-color);
+}
+
+/* Примеры работ */
+
 /* element style */
 .bg-box {
   position: absolute;
